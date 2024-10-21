@@ -1,0 +1,34 @@
+html
+{
+    background-color: rgb(12, 10, 10);
+}
+
+#navbar {
+    color: #989898;
+    justify-content: space-around;
+    margin: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+}
+
+.left-header {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.right-header ul {
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.right-header ul li a {
+    color: #989898;
+    text-decoration: none;
+}
+
+.right-header ul li a:hover {
+    color: white;
+    border-bottom: 1px solid #989898;
+    transition: color 0.5s, border-bottom 4s;
+}

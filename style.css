@@ -1,0 +1,327 @@
+html {
+    background-image: url("assets/img/lamp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+/* navbar css here */
+#navbar {
+    color: #989898;
+    justify-content: space-around;
+    margin: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+}
+
+.left-header {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.right-header ul {
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.right-header ul li a {
+    color: #989898;
+    text-decoration: none;
+}
+
+.right-header ul li a:hover {
+    color: white;
+    border-bottom: 1px solid #989898;
+    transition: color 0.5s, border-bottom 4s;
+}
+
+
+/* main start here. */
+
+main {
+    height: 90vh;
+    display: flex;
+}
+
+.left-main {
+    margin: 1rem;
+    width: 20%;
+
+}
+
+.left-main ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 40%;
+}
+
+.left-main ul li a i {
+    font-size: 1.5rem;
+    color: #989898;
+    text-decoration: none;
+}
+
+.left-main a :hover {
+    color: white;
+    transform: translateY(-3px);
+    transition: all 0.3s;
+
+}
+
+.right-main {
+    margin-left: 40%;
+    margin-top: 12%;
+    color: #9898989a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-main div,
+span {
+    font-size: 3rem;
+    ;
+}
+
+
+/* section starts here */
+
+
+
+section {
+    color: #989898;
+    background-color: rgb(12, 10, 10);
+    text-align: center;
+    padding: 2rem;
+    /* width: 100vw; */
+}
+
+section p {
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* experience section here  */
+
+/* background-color: rgb(19, 18, 18); */
+
+
+#experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #989898;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo>img {
+    width: 100%;
+    
+}
+
+.timeline-logo>i {
+    width: 100%;
+    font-size: 3.3rem;
+    color: white;
+
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #989898;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(180deg);
+    margin-top: -35px;
+    display: block;
+    color: white;
+    margin-left: 16px;
+    font-size: 2rem;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 18px;
+    padding: 2px;
+    color: #989898;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+
+/* skill section starts here  */
+
+.skill-display{
+    justify-content: space-around;
+}
+
+.skill-display img{
+    height: 4rem;
+
+}
+
+
+
+
+/* footer starts here  */
+
+
+footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #989898;
+    background-color: rgb(12, 10, 10);
+    font-size: 2rem;
+}
+
+#foot-div{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-foot{
+    width: 30%;
+}
+
+.left-foot form{
+    flex-direction: column;
+    gap: 2rem;
+    border: none;
+    max-width: 90%;
+    margin: 10%;
+    background-color: transparent;
+    
+}
+
+
+
+
+.transparent-form {
+    width: 80%;
+    padding: 20px;
+}
+
+.transparent-form input{
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.transparent-form button {
+    cursor: pointer;
+    color: white;
+    height: 3rem;
+    background-color: rgb(12, 10, 10);
+    border: 1px solid white;
+    border-radius: 0.6rem;
+    transition: background-color 0.5s ease;
+}
+
+.transparent-form input:focus{
+    color: white;
+}
+
+
+.transparent-form button:hover {
+    font-weight: bold;
+    color: rgb(12, 10, 10);
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent on hover */
+}
+
+.right-foot{
+    width: 25%;
+}
+
+.right-foot div{
+    color: #989898;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.right-foot p{
+    padding: 1rem;
+
+}
